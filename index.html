@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interactivo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Bot璐竛 de modo noche -->
+    <button id="night-mode-btn">🌙 Modo Oscuro</button>
+    
+    <div class="quiz-container">
+        <h2>Test De Leyes</h2>
+		<div id="shuffle-container">
+    <label><input type="checkbox" id="shuffle-questions"> Mezclar preguntas</label>
+    <label><input type="checkbox" id="shuffle-answers"> Mezclar respuestas</label>
+</div>
+        <h2 id="test-title" class="hidden"></h2>
+        <div id="categories">
+            <!-- Categorías con submenús -->
+            <div class="category">
+                <div class="category-title" onclick="toggleSubcategory('sistemas-operativos')">Ley 7/85 Régimen Local</div>
+                <div id="sistemas-operativos" class="subcategory">
+                    <button onclick="loadQuestions('tit1785')">TITULO 1 - Disposiciones generales 7/85</button>
+					<button onclick="loadQuestions('tit1cap1785')">TITULO 1 - Disposiciones generales 7/85 (Dificil)</button>
+                    <button onclick="loadQuestions('titcap11785')">TITULO 2 - El Municipio - CAP.1 Territorio y Población</button>
+					<button onclick="loadQuestions('titcap12785')">TITULO 2 - El Municipio - CAP.2 Organización</button>
+					<button onclick="loadQuestions('titcap13785')">TITULO 2 - El Municipio - CAP.3 Competencias - CAP.4 Regímenes Especiales</button>
+					<button onclick="loadQuestions('tit3cap1785')">TITULO 3 - La Provincia - CAP.1 Organización - CAP.2 Competencias</button>
+					<button onclick="loadQuestions('tit3cap34785')">TITULO 3 - La Provincia - CAP3. Regímenes especiales - CAP4. Otras Entidades locales</button>
+					<button onclick="loadQuestions('tit5cap12785')">TITULO 3 - La Provincia - TIT5. Disposiciones comunes a las Entidades locales - CAP1. Régimen de funcionamiento - CAP2. Relaciones interadministrativas</button>
+					<button onclick="loadQuestions('tit5cap34785')">TITULO 3 - La Provincia - TIT5. Disposiciones comunes a las Entidades locales - CAP3. Impugnación de actos y acuerdos y ejercicio de acciones - CAP4. Información y participación ciudadanas</button>
+					<button onclick="loadQuestions('tit5cap5785')">TITULO 3 - La Provincia - TIT5. Disposiciones comunes a las Entidades locales - CAP5. Estatuto de los miembros de las Corporaciones locales</button>                
+					<button onclick="loadQuestions('tit6cap12785')">TITULO 3 - La Provincia - TIT6. Bienes, actividades y servicios, y contratación - CAP1. Bienes - CAP2. Actividades y Servicios</button>                
+					<button onclick="loadQuestions('tit7cap12785')">TITULO 3 - La Provincia - TIT7. Personal al servicio de las Ent.Locales - CAP1. Disp.Generales - CAP2. Disp.Comunes a los Funcionarios de Carrera</button>
+					<button onclick="loadQuestions('tit7cap345785')">TITULO 3 - La Provincia - TIT7. Personal al servicio de las Ent.Locales - CAP3. Selec. y forma. funcionarios habilitación carácter nacional y sistema de provisión de plazas - CAP4. Selec. restantes funcionarios y reglas provisión puestos de trabajo - CAP5. Del personal laboral y eventual</button>                
+					<button onclick="loadQuestions('tit8cap785')">TITULO 3 - La Provincia - TIT8. Haciendas Locales</button>                
+					<button onclick="loadQuestions('tit9cap785')">TITULO 3 - La Provincia - TIT9. Organizaciones para la cooperación entre las Administraciones Públicas en materia de Administración Local</button>                
+					<button onclick="loadQuestions('tit10cap12785')">TITULO 3 - La Provincia - TIT10. Régimen de organización de los municipios de gran población - CAP1. Ámbito de aplicación - CAP2. Organización y funcionamiento de los órganos municipales necesarios</button>                
+					<button onclick="loadQuestions('tit10cap34785')">TITULO 3 - La Provincia - TIT10. Régimen de organización de los municipios de gran población - CAP3. Gestión económico-financiera - CAP4. Conferencia de Ciudades</button>                
+					<button onclick="loadQuestions('tit11cap785')">TITULO 3 - La Provincia - TIT11. Tipificación de las infracciones y sanciones por las Entidades Locales en determinadas materias</button>                
+				</div>
+            </div>
+            
+            <div class="category">
+                <div class="category-title" onclick="toggleSubcategory('hardware')">Arquitectura y Hardware</div>
+                <div id="hardware" class="subcategory">
+                    <button onclick="loadQuestions('tema2')">TEST TEMA 2 - Organizaci璐竛 y funcionamiento</button>
+                </div>
+            </div>
+            
+            <div class="category">
+                <div class="category-title" onclick="toggleSubcategory('bbdd')">Bases de Datos</div>
+                <div id="bbdd" class="subcategory">
+                    <button onclick="loadQuestions('tema18')">TEST TEMA 18 - Lenguaje SQL</button>
+                </div>
+            </div>
+            
+            <div class="category">
+                <div class="category-title" onclick="toggleSubcategory('web')">Desarrollo Web</div>
+                <div id="web" class="subcategory">
+                    <button onclick="loadQuestions('tema25')">TEST TEMA 25 - Arquitecturas de servicios Web</button>
+                </div>
+            </div>
+            
+            <div class="category">
+                <div class="category-title" onclick="toggleSubcategory('redes')">Redes y Comunicaciones</div>
+                <div id="redes" class="subcategory">
+                    <button onclick="loadQuestions('tema40')">TEST TEMA 40 - Telecomunicaciones</button>
+                </div>
+            </div>
+            
+            <div class="category">
+                <div class="category-title" onclick="toggleSubcategory('seguridad')">Seguridad y Sistemas</div>
+                <div id="seguridad" class="subcategory">
+                    <button onclick="loadQuestions('tema44')">TEST TEMA 44 - Seguridad inform璋﹖ica</button>
+                </div>
+            </div>
+            
+            <!-- Temas individuales -->
+            <div class="category-title" onclick="toggleSubcategory('individual')">Temas Individuales</div>
+            <div id="individual" class="subcategory individual-topics">
+			    <button onclick="loadQuestions('tema5opo')">TEST TEMA 5 OPO.</button>
+
+             </div>
+			            <!-- Examenes Oficiales -->
+            <div class="category-title" onclick="toggleSubcategory('oficiales')">Examenes Oficiales</div>
+            <div id="oficiales" class="subcategory oficiales-topics">
+			    <button onclick="loadQuestions('tai2024')">TEST TAI 2024</button>
+            </div>
+            
+            <button id="random-test" onclick="loadQuestions('random')">PREGUNTAS ALEATORIAS (50)</button>
+        </div>
+        <h2 id="question" class="hidden">Pregunta aquí</h2>
+        <div id="answers" class="hidden"></div>
+        <h3 id="score" class="hidden"></h3>
+        <div id="correct-answers" class="hidden"></div>
+        <button id="restart" class="hidden" onclick="restartQuiz()">Volver al menú</button>
+    </div>
+
+    <script src="js/tit1785.js"></script>
+	<script src="js/tit1cap1785.js"></script>
+    <script src="js/titcap11785.js"></script>
+	<script src="js/titcap12785.js"></script>
+	<script src="js/titcap13785.js"></script>
+	<script src="js/tit3cap1785.js"></script>
+	<script src="js/tit3cap2785.js"></script>
+	<script src="js/tit3cap34785.js"></script>
+	<script src="js/tit5cap12785.js"></script>
+	<script src="js/tit5cap34785.js"></script>
+	<script src="js/tit5cap5785.js"></script>
+	<script src="js/tit6cap12785.js"></script>
+	<script src="js/tit7cap12785.js"></script>
+	<script src="js/tit7cap345785.js"></script>
+	<script src="js/tit8cap785.js"></script>
+	<script src="js/tit9cap785.js"></script>
+	<script src="js/tit10cap12785.js"></script>
+	<script src="js/tit10cap34785.js"></script>
+	<script src="js/tit11cap785.js"></script>
+    <script src="js/custom-random-test.js"></script>
+    
+    <!-- Script para el modo noche y bot璐竛 din璋﹎ico -->
+    <script>
+        // Funci璐竛 para alternar el modo noche
+        function toggleNightMode() {
+            document.documentElement.classList.toggle('dark-mode');
+            document.body.classList.toggle('dark-mode');
+            
+            // Cambiar el texto del bot璐竛 según el modo
+            const nightModeBtn = document.getElementById('night-mode-btn');
+            if (document.body.classList.contains('dark-mode')) {
+                nightModeBtn.textContent = '☀️ Modo Claro';
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                nightModeBtn.textContent = '🌙 Modo Oscuro';
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+        
+        // Aplicar el modo noche guardado
+        document.addEventListener('DOMContentLoaded', function() {
+            const nightModeBtn = document.getElementById('night-mode-btn');
+            nightModeBtn.addEventListener('click', toggleNightMode);
+            
+            // Comprobar si el modo oscuro estaba activado anteriormente
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                document.documentElement.classList.add('dark-mode');
+                document.body.classList.add('dark-mode');
+                nightModeBtn.textContent = '☀️ Modo Claro';
+            }
+            
+            // Ocultar/mostrar el bot璐竛 según el scroll
+            let lastScrollTop = 0;
+            window.addEventListener('scroll', function() {
+                const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+                
+                // Si el scroll est璋?en la parte superior (menos de 100px), mostrar el bot璐竛
+                if (currentScroll < 100) {
+                    nightModeBtn.style.opacity = '1';
+                    nightModeBtn.style.transform = 'translateY(0)';
+                } else {
+                    // Si est璋?bajando, ocultar el bot璐竛
+                    nightModeBtn.style.opacity = '0';
+                    nightModeBtn.style.transform = 'translateY(-20px)';
+                }
+                
+                lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+            });
+        });
+        
+        // Mantener las funciones existentes
+        function toggleSubcategory(id) {
+            const subcategory = document.getElementById(id);
+            if (subcategory.style.display === 'block') {
+                subcategory.style.display = 'none';
+            } else {
+                subcategory.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
