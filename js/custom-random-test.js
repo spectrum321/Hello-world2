@@ -39,77 +39,98 @@ document.getElementById('shuffle-container').classList.add('hidden');
             quiz = [...tit1cap1785]; // Crear copia del array
             break;
         case 'titcap11785': 
-            testTitle = 'TITULO 2 - El Municipio - CAP.1 Territorio y Población';
+            testTitle = 'TITULO 2 - El Municipio - CAP.1 Territorio y Población 7/85';
             quiz = [...titcap11785]; // Crear copia del array
             break;
 		case 'titcap12785': 
-            testTitle = 'TITULO 2 - El Municipio - CAP.2 Organización';
+            testTitle = 'TITULO 2 - El Municipio - CAP.2 Organización 7/85';
             quiz = [...titcap12785]; // Crear copia del array
             break;
 		case 'titcap13785': 
-            testTitle = 'TITULO 2 - El Municipio - CAP.3 Competencias';
+            testTitle = 'TITULO 2 - El Municipio - CAP.3 Competencias 7/85';
             quiz = [...titcap13785]; // Crear copia del array
             break;
 		case 'tit3cap1785': 
-            testTitle = 'TITULO 3 - La Provincia - CAP.1 Organización';
+            testTitle = 'TITULO 3 - La Provincia - CAP.1 Organización 7/85';
             quiz = [...tit3cap1785]; // Crear copia del array
             break;		
 		case 'tit3cap2785': 
-            testTitle = 'TITULO 3 - La Provincia - CAP.2 Competencias';
+            testTitle = 'TITULO 3 - La Provincia - CAP.2 Competencias 7/85';
             quiz = [...tit3cap2785]; // Crear copia del array
             break;
 		case 'tit3cap34785': 
-            testTitle = 'TITULO 3 - La Provincia - CAP3. Regímenes especiales - CAP4. Otras Entidades locales';
+            testTitle = 'TITULO 3 - La Provincia - CAP3. Regímenes especiales - CAP4. Otras Entidades locales 7/85';
             quiz = [...tit3cap34785]; // Crear copia del array
             break;
 		case 'tit5cap12785': 
-            testTitle = 'TIT.3 - La Provincia - CAP5. Disposiciones comunes a las Ent.locales - CAP1. Régimen de funcionamiento - CAP2. Relaciones interadm.';
+            testTitle = 'TIT.3 - La Provincia - CAP5. Disposiciones comunes a las Ent.locales - CAP1. Régimen de funcionamiento - CAP2. Relaciones interadm.7/85';
             quiz = [...tit5cap12785]; // Crear copia del array
             break;
 		case 'tit5cap34785': 
-            testTitle = 'TIT.3 - La Provincia - TIT5. Dispo comunes a las Entidades loc - CAP3. Impugnación de actos y acuerdos y ejercicio de acciones - CAP4. Información y participación ciudadanas';
+            testTitle = 'TIT.3 - La Provincia - TIT5. Dispo comunes a las Entidades loc - CAP3. Impugnación de actos y acuerdos y ejercicio de acciones - CAP4. Información y participación ciudadanas 7/85';
             quiz = [...tit5cap34785]; // Crear copia del array
             break;
 		case 'tit5cap5785': 
-            testTitle = 'TIT.3 - La Provincia - TIT5. Dispo comunes a las Entidades loc - CAP5. Estatuto de los miembros de las Corporaciones locales';
+            testTitle = 'TIT.3 - La Provincia - TIT5. Dispo comunes a las Entidades loc - CAP5. Estatuto de los miembros de las Corporaciones locales 7/85';
             quiz = [...tit5cap5785]; // Crear copia del array
             break;
 		case 'tit6cap12785': 
-            testTitle = 'TITULO 3 - La Provincia - TIT6. Bienes, actividades y servicios, y contratación - CAP1. Bienes - CAP2. Actividades y Servicios';
+            testTitle = 'TITULO 3 - La Provincia - TIT6. Bienes, actividades y servicios, y contratación - CAP1. Bienes - CAP2. Actividades y Servicios 7/85';
             quiz = [...tit6cap12785]; // Crear copia del array
             break;
 		case 'tit7cap12785': 
-            testTitle = 'TITULO 3 - La Provincia - TIT7. Personal al servicio de las Ent.Locales - CAP1. Disp.Generales - CAP2. Disp.Comunes a los Funcionarios de Carrera';
+            testTitle = 'TITULO 3 - La Provincia - TIT7. Personal al servicio de las Ent.Locales - CAP1. Disp.Generales - CAP2. Disp.Comunes a los Funcionarios de Carrera 7/85';
             quiz = [...tit7cap12785]; // Crear copia del array
             break;
 		case 'tit7cap345785': 
-            testTitle = 'TITULO 3 - La Provincia - TIT7. Personal al servicio de las Ent.Locales - CAP3. Selec. y forma. funcionarios habilitación carácter nacional y sistema de provisión de plazas - CAP4. Selec. restantes funcionarios y reglas provisión puestos de trabajo - CAP5. Del personal laboral y eventual';
+            testTitle = 'TITULO 3 - La Provincia - TIT7. Personal al servicio de las Ent.Locales - CAP3. Selec. y forma. funcionarios habilitación carácter nacional y sistema de provisión de plazas - CAP4. Selec. restantes funcionarios y reglas provisión puestos de trabajo - CAP5. Del personal laboral y eventual 7/85';
             quiz = [...tit7cap345785]; // Crear copia del array
             break;
 		case 'tit8cap785': 
-            testTitle = 'TITULO 3 - La Provincia - TIT8. Haciendas Locales';
+            testTitle = 'TITULO 3 - La Provincia - TIT8. Haciendas Locales 7/85';
             quiz = [...tit8cap785]; // Crear copia del array
             break;
 		case 'tit9cap785': 
-            testTitle = 'TITULO 3 - La Provincia - TIT9. Organizaciones para la cooperación entre las Administraciones Públicas en materia de Administración Local';
+            testTitle = 'TITULO 3 - La Provincia - TIT9. Organizaciones para la cooperación entre las Administraciones Públicas en materia de Administración Local 7/85';
             quiz = [...tit9cap785]; // Crear copia del array
             break;
 		case 'tit10cap12785': 
-            testTitle = 'TITULO 3 - La Provincia - TIT10. Régimen de organización de los municipios de gran población - CAP1. Ámbito de aplicación - CAP2. Organización y funcionamiento de los órganos municipales necesarios';
+            testTitle = 'TITULO 3 - La Provincia - TIT10. Régimen de organización de los municipios de gran población - CAP1. Ámbito de aplicación - CAP2. Organización y funcionamiento de los órganos municipales necesarios 7/85';
             quiz = [...tit10cap12785]; // Crear copia del array
             break;
 		case 'tit10cap34785': 
-            testTitle = 'TITULO 3 - La Provincia - TIT10. Régimen de organización de los municipios de gran población - CAP3. Gestión económico-financiera - CAP4. Conferencia de Ciudades';
+            testTitle = 'TITULO 3 - La Provincia - TIT10. Régimen de organización de los municipios de gran población - CAP3. Gestión económico-financiera - CAP4. Conferencia de Ciudades 7/85';
             quiz = [...tit10cap34785]; // Crear copia del array
             break;
 		case 'tit11cap785': 
-            testTitle = 'TITULO 3 - La Provincia - TIT11. Tipificación de las infracciones y sanciones por las Entidades Locales en determinadas materias';
+            testTitle = 'TITULO 3 - La Provincia - TIT11. Tipificación de las infracciones y sanciones por las Entidades Locales en determinadas materias 7/85';
             quiz = [...tit11cap785]; // Crear copia del array
+            break;
+		case 'tit1252015': 
+            testTitle = 'TIT1. Objeto y ámbito de aplicación - TIT2.Personal al servicio de las Adm.Púb. 5/2015';
+            quiz = [...tit1252015]; // Crear copia del array
+            break;	
+		case 'tit3cap1252015': 
+            testTitle = 'TIT3. Derechos y deberes empleados públicos - CAP1.Derechos de los emp. públicos - CAP2.Derecho carrera profesional y promoción interna. Evaluación desempeño - CAP3.Derechos retributivos 5/2015';
+            quiz = [...tit3cap1252015]; // Crear copia del array
+            break;		
+		case 'tit3cap452015': 
+            testTitle = 'TIT3. Derechos y deberes empleados públicos - CAP4.Derecho a la negociación colectiva, representación y participación institucional. Derecho de reunión.5/2015';
+            quiz = [...tit3cap452015]; // Crear copia del array
+            break;		
+		case 'tit3cap5652015': 
+            testTitle = 'TIT3. Derechos y deberes empleados públicos - CAP5.Derecho a la jornada de trabajo, permisos y vacaciones - CAP6.Deberes de los empleados públicos. Código de Conducta.5/2015';
+            quiz = [...tit3cap5652015]; // Crear copia del array
+            break;
+		case 'bolsaayto': 
+            testTitle = 'EXAMEN BOLSA AYTO HUELVA';
+            quiz = [...bolsaayto]; // Crear copia del array
             break;
         case 'random': 
             testTitle = 'TEST ALEATORIO';
             quiz = [...tit1785, ...tit1cap1785, ...titcap11785, ...titcap12785, ...titcap13785, ...tit3cap1785, ...tit3cap2785, ...tit3cap34785, ...tit5cap12785, ...tit5cap34785, ...tit5cap5785,
-			 ...tit6cap12785, ...tit7cap12785, ...tit7cap345785, ...tit8cap785, ...tit9cap785, ...tit10cap12785, ...tit10cap34785, ...tit11cap785].slice(0, 50);
+			 ...tit6cap12785, ...tit7cap12785, ...tit7cap345785, ...tit8cap785, ...tit9cap785, ...tit10cap12785, ...tit10cap34785, ...tit11cap785, ...tit1252015, ...tit3cap1252015, ...tit3cap452015,
+			 ...tit3cap5652015, ...bolsaayto].slice(0, 50);
             break;
         default: 
             quiz = []; 
@@ -301,21 +322,26 @@ function createRandomTestSelector() {
         {id: 'tit1785', name: 'TEST TITULO 1 - Disposiciones generales 7/85'},
 		{id: 'tit1cap1785', name: 'TITULO 1 - Disposiciones generales 7/85 (Dificil)'},
         {id: 'titcap11785', name: 'TITULO 2 - El Municipio - CAP.1 Territorio y Población'},
-		{id: 'titcap12785', name: 'TITULO 2 - El Municipio - CAP.2 Organización'},
-		{id: 'titcap13785', name: 'TITULO 2 - El Municipio - CAP.3 Competencias'},		
-		{id: 'tit3cap1785', name: 'TITULO 3 - La Provincia - CAP.1 Organización'},		
-		{id: 'tit3cap2785', name: 'TITULO 3 - La Provincia - CAP.2 Competencias'},		
-		{id: 'tit3cap34785', name: 'TITULO 3 - La Provincia - CAP3. Regímenes especiales - CAP4. Otras Entidades locales'},
-		{id: 'tit5cap12785', name: 'TIT.3 - La Provincia - TIT5. Disposiciones comunes a las Ent.locales - CAP1. Régimen de funcionamiento - CAP2. Relaciones interadm.'},
-		{id: 'tit5cap34785', name: 'TITULO 3 - La Provincia - TIT5. Disposiciones comunes a las Entidades locales - CAP3. Impugnación de actos y acuerdos y ejercicio de acciones - CAP4. Información y participación ciudadanas'},
-		{id: 'tit5cap5785', name: 'TITULO 3 - La Provincia - TIT5. Disposiciones comunes a las Entidades locales - CAP5. Estatuto de los miembros de las Corporaciones locales'},
-		{id: 'tit6cap12785', name: 'TITULO 3 - La Provincia - TIT6. Bienes, actividades y servicios, y contratación - CAP1. Bienes - CAP2. Actividades y Servicios'},
-		{id: 'tit7cap12785', name: 'TITULO 3 - La Provincia - TIT7. Personal al servicio de las Ent.Locales - CAP1. Disp.Generales - CAP2. Disp.Comunes a los Funcionarios de Carrera'},
-		{id: 'tit7cap345785', name: 'TITULO 3 - La Provincia - TIT7. Personal al servicio de las Ent.Locales - CAP3. Selec. y forma. funcionarios habilitación carácter nacional y sistema de provisión de plazas - CAP4. Selec. restantes funcionarios y reglas provisión puestos de trabajo - CAP5. Del personal laboral y eventual'},
-		{id: 'tit8cap785', name: 'TITULO 3 - La Provincia - TIT8. Haciendas Locales'},
-		{id: 'tit10cap12785', name: 'TITULO 3 - La Provincia - TIT10. Régimen de organización de los municipios de gran población - CAP1. Ámbito de aplicación - CAP2. Organización y funcionamiento de los órganos municipales necesarios'},
-		{id: 'tit10cap34785', name: 'TITULO 3 - La Provincia - TIT10. Régimen de organización de los municipios de gran población - CAP3. Gestión económico-financiera - CAP4. Conferencia de Ciudades'},
-		{id: 'tit11cap785', name: 'TITULO 3 - La Provincia - TIT11. Tipificación de las infracciones y sanciones por las Entidades Locales en determinadas materias'},
+		{id: 'titcap12785', name: 'TITULO 2 - El Municipio - CAP.2 Organización 7/85'},
+		{id: 'titcap13785', name: 'TITULO 2 - El Municipio - CAP.3 Competencias 7/85'},		
+		{id: 'tit3cap1785', name: 'TITULO 3 - La Provincia - CAP.1 Organización 7/85'},		
+		{id: 'tit3cap2785', name: 'TITULO 3 - La Provincia - CAP.2 Competencias 7/85'},		
+		{id: 'tit3cap34785', name: 'TITULO 3 - La Provincia - CAP3. Regímenes especiales - CAP4. Otras Entidades locales 7/85'},
+		{id: 'tit5cap12785', name: 'TIT.3 - La Provincia - TIT5. Disposiciones comunes a las Ent.locales - CAP1. Régimen de funcionamiento - CAP2. Relaciones interadm.7/85'},
+		{id: 'tit5cap34785', name: 'TITULO 3 - La Provincia - TIT5. Disposiciones comunes a las Entidades locales - CAP3. Impugnación de actos y acuerdos y ejercicio de acciones - CAP4. Información y participación ciudadanas 7/85'},
+		{id: 'tit5cap5785', name: 'TITULO 3 - La Provincia - TIT5. Disposiciones comunes a las Entidades locales - CAP5. Estatuto de los miembros de las Corporaciones locales.7/85'},
+		{id: 'tit6cap12785', name: 'TITULO 3 - La Provincia - TIT6. Bienes, actividades y servicios, y contratación - CAP1. Bienes - CAP2. Actividades y Servicios.7/85'},
+		{id: 'tit7cap12785', name: 'TITULO 3 - La Provincia - TIT7. Personal al servicio de las Ent.Locales - CAP1. Disp.Generales - CAP2. Disp.Comunes a los Funcionarios de Carrera.7/85'},
+		{id: 'tit7cap345785', name: 'TITULO 3 - La Provincia - TIT7. Personal al servicio de las Ent.Locales - CAP3. Selec. y forma. funcionarios habilitación carácter nacional y sistema de provisión de plazas - CAP4. Selec. restantes funcionarios y reglas provisión puestos de trabajo - CAP5. Del personal laboral y eventual.7/85'},
+		{id: 'tit8cap785', name: 'TITULO 3 - La Provincia - TIT8. Haciendas Locales.7/85'},
+		{id: 'tit10cap12785', name: 'TITULO 3 - La Provincia - TIT10. Régimen de organización de los municipios de gran población - CAP1. Ámbito de aplicación - CAP2. Organización y funcionamiento de los órganos municipales necesarios.7/85'},
+		{id: 'tit10cap34785', name: 'TITULO 3 - La Provincia - TIT10. Régimen de organización de los municipios de gran población - CAP3. Gestión económico-financiera - CAP4. Conferencia de Ciudades.7/85'},
+		{id: 'tit11cap785', name: 'TITULO 3 - La Provincia - TIT11. Tipificación de las infracciones y sanciones por las Entidades Locales en determinadas materias.7/85'},
+		{id: 'tit1252015', name: 'TIT1. Objeto y ámbito de aplicación - TIT2.Personal al servicio de las Adm.Púb.5/2015'},
+		{id: 'tit3cap1252015', name: 'TIT3. Derechos y deberes empleados públicos - CAP1.Derechos de los emp. públicos - CAP2.Derecho carrera profesional y promoción interna. Evaluación desempeño - CAP3.Derechos retributivos.5/2015'},
+		{id: 'tit3cap452015', name: 'TIT3. Derechos y deberes empleados públicos - CAP4.Derecho a la negociación colectiva, representación y participación institucional. Derecho de reunión.5/2015'},
+		{id: 'tit3cap5652015', name: 'TIT3. Derechos y deberes empleados públicos - CAP5.Derecho a la jornada de trabajo, permisos y vacaciones - CAP6.Deberes de los empleados públicos. Código de Conducta.5/2015'},
+		{id: 'bolsaayto', name: 'EXAMEN BOLSA AYTO HUELVA'},
     ];
     
     // Botón para seleccionar/deseleccionar todos
@@ -461,6 +487,11 @@ function generateCustomTest() {
 			case 'tit10cap12785': allQuestions = allQuestions.concat(tit10cap12785); break;				
 			case 'tit10cap34785': allQuestions = allQuestions.concat(tit10cap34785); break;
 			case 'tit11cap785': allQuestions = allQuestions.concat(tit11cap785); break;
+			case 'tit1252015': allQuestions = allQuestions.concat(tit1252015); break;
+			case 'tit3cap1252015': allQuestions = allQuestions.concat(tit3cap1252015); break;
+			case 'tit3cap452015': allQuestions = allQuestions.concat(tit3cap452015); break;
+			case 'tit3cap5652015': allQuestions = allQuestions.concat(tit3cap5652015); break;
+			case 'bolsaayto': allQuestions = allQuestions.concat(bolsaayto); break;		
         }
     });
     
