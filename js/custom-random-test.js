@@ -122,6 +122,26 @@ document.getElementById('shuffle-container').classList.add('hidden');
             testTitle = 'TIT3. Derechos y deberes empleados públicos - CAP5.Derecho a la jornada de trabajo, permisos y vacaciones - CAP6.Deberes de los empleados públicos. Código de Conducta.5/2015';
             quiz = [...tit3cap5652015]; // Crear copia del array
             break;
+		case 'tit4cap52015': 
+            testTitle = 'TIT4. Adquisición y pérdida de la relación de servicio - CAP1.Acceso al empleo público y adquisición de la relación de servicio - CAP2.Pérdida de la relación de servicio.5/2015';
+            quiz = [...tit4cap52015]; // Crear copia del array
+            break;
+		case 'tit5cap52015': 
+            testTitle = 'TIT5. Ordenación de la actividad profesional - CAP1.Planificación de recursos humanos - CAP2.Estructuración del empleo público - CAP3.Provisión de puestos de trabajo y movilidad.5/2015';
+            quiz = [...tit5cap52015]; // Crear copia del array
+            break;
+		case 'tit6cap52015': 
+            testTitle = 'TIT6. Situaciones administrativas.5/2015';
+            quiz = [...tit6cap52015]; // Crear copia del array
+            break;
+		case 'tit7cap52015': 
+            testTitle = 'TIT7. Régimen disciplinario.5/2015';
+            quiz = [...tit7cap52015]; // Crear copia del array
+            break;
+		case 'tit8cap52015': 
+            testTitle = 'TIT8. Cooperación entre las Administraciones Públicas.5/2015';
+            quiz = [...tit8cap52015]; // Crear copia del array
+            break;
 		case 'bolsaayto': 
             testTitle = 'EXAMEN BOLSA AYTO HUELVA';
             quiz = [...bolsaayto]; // Crear copia del array
@@ -130,7 +150,7 @@ document.getElementById('shuffle-container').classList.add('hidden');
             testTitle = 'TEST ALEATORIO';
             quiz = [...tit1785, ...tit1cap1785, ...titcap11785, ...titcap12785, ...titcap13785, ...tit3cap1785, ...tit3cap2785, ...tit3cap34785, ...tit5cap12785, ...tit5cap34785, ...tit5cap5785,
 			 ...tit6cap12785, ...tit7cap12785, ...tit7cap345785, ...tit8cap785, ...tit9cap785, ...tit10cap12785, ...tit10cap34785, ...tit11cap785, ...tit1252015, ...tit3cap1252015, ...tit3cap452015,
-			 ...tit3cap5652015, ...bolsaayto].slice(0, 50);
+			 ...tit3cap5652015, ...tit4cap52015, ...tit5cap52015, ...tit6cap52015, ...tit7cap52015, ...tit8cap52015, ...bolsaayto].slice(0, 50);
             break;
         default: 
             quiz = []; 
@@ -341,6 +361,11 @@ function createRandomTestSelector() {
 		{id: 'tit3cap1252015', name: 'TIT3. Derechos y deberes empleados públicos - CAP1.Derechos de los emp. públicos - CAP2.Derecho carrera profesional y promoción interna. Evaluación desempeño - CAP3.Derechos retributivos.5/2015'},
 		{id: 'tit3cap452015', name: 'TIT3. Derechos y deberes empleados públicos - CAP4.Derecho a la negociación colectiva, representación y participación institucional. Derecho de reunión.5/2015'},
 		{id: 'tit3cap5652015', name: 'TIT3. Derechos y deberes empleados públicos - CAP5.Derecho a la jornada de trabajo, permisos y vacaciones - CAP6.Deberes de los empleados públicos. Código de Conducta.5/2015'},
+		{id: 'tit4cap52015', name: 'TIT4. Adquisición y pérdida de la relación de servicio - CAP1.Acceso al empleo público y adquisición de la relación de servicio - CAP2.Pérdida de la relación de servicio.5/2015'},
+		{id: 'tit5cap52015', name: 'TIT5. Ordenación de la actividad profesional - CAP1.Planificación de recursos humanos - CAP2.Estructuración del empleo público - CAP3.Provisión de puestos de trabajo y movilidad.5/2015'},
+		{id: 'tit6cap52015', name: 'TIT6. Situaciones administrativas.5/2015'},
+		{id: 'tit7cap52015', name: 'TIT7. Régimen disciplinario.5/2015'},
+		{id: 'tit8cap52015', name: 'TIT8. Cooperación entre las Administraciones Públicas.5/2015'},
 		{id: 'bolsaayto', name: 'EXAMEN BOLSA AYTO HUELVA'},
     ];
     
@@ -491,6 +516,11 @@ function generateCustomTest() {
 			case 'tit3cap1252015': allQuestions = allQuestions.concat(tit3cap1252015); break;
 			case 'tit3cap452015': allQuestions = allQuestions.concat(tit3cap452015); break;
 			case 'tit3cap5652015': allQuestions = allQuestions.concat(tit3cap5652015); break;
+			case 'tit4cap52015': allQuestions = allQuestions.concat(tit4cap52015); break;
+			case 'tit5cap52015': allQuestions = allQuestions.concat(tit5cap52015); break;
+			case 'tit6cap52015': allQuestions = allQuestions.concat(tit6cap52015); break;
+			case 'tit7cap52015': allQuestions = allQuestions.concat(tit7cap52015); break;
+			case 'tit8cap52015': allQuestions = allQuestions.concat(tit8cap52015); break;
 			case 'bolsaayto': allQuestions = allQuestions.concat(bolsaayto); break;		
         }
     });
