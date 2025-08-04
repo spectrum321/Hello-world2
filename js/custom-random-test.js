@@ -142,6 +142,18 @@ document.getElementById('shuffle-container').classList.add('hidden');
             testTitle = 'TIT8. Cooperación entre las Administraciones Públicas.5/2015';
             quiz = [...tit8cap52015]; // Crear copia del array
             break;
+		case 'constart38': 
+            testTitle = 'PREAMBULO - TIT.PRELIMINAR - TIT.1 De los derechos y deberes fundamentales CAP.1-CAP.2.Constitución';
+            quiz = [...constart38]; // Crear copia del array
+            break;
+		case 'constart55': 
+            testTitle = 'TIT.1 De los derechos y deberes fundamentales CAP.3-CAP.4-CAP.5.Constitución';
+            quiz = [...constart55]; // Crear copia del array
+            break;
+		case 'constart65': 
+            testTitle = 'TIT.2 De la Corona.Constitución';
+            quiz = [...constart65]; // Crear copia del array
+            break;
 		case 'bolsaayto': 
             testTitle = 'EXAMEN BOLSA AYTO HUELVA';
             quiz = [...bolsaayto]; // Crear copia del array
@@ -150,7 +162,7 @@ document.getElementById('shuffle-container').classList.add('hidden');
             testTitle = 'TEST ALEATORIO';
             quiz = [...tit1785, ...tit1cap1785, ...titcap11785, ...titcap12785, ...titcap13785, ...tit3cap1785, ...tit3cap2785, ...tit3cap34785, ...tit5cap12785, ...tit5cap34785, ...tit5cap5785,
 			 ...tit6cap12785, ...tit7cap12785, ...tit7cap345785, ...tit8cap785, ...tit9cap785, ...tit10cap12785, ...tit10cap34785, ...tit11cap785, ...tit1252015, ...tit3cap1252015, ...tit3cap452015,
-			 ...tit3cap5652015, ...tit4cap52015, ...tit5cap52015, ...tit6cap52015, ...tit7cap52015, ...tit8cap52015, ...bolsaayto].slice(0, 50);
+			 ...tit3cap5652015, ...tit4cap52015, ...tit5cap52015, ...tit6cap52015, ...tit7cap52015, ...tit8cap52015, ...constart38, ...constart55, ...constart65, ...bolsaayto].slice(0, 50);
             break;
         default: 
             quiz = []; 
@@ -366,6 +378,9 @@ function createRandomTestSelector() {
 		{id: 'tit6cap52015', name: 'TIT6. Situaciones administrativas.5/2015'},
 		{id: 'tit7cap52015', name: 'TIT7. Régimen disciplinario.5/2015'},
 		{id: 'tit8cap52015', name: 'TIT8. Cooperación entre las Administraciones Públicas.5/2015'},
+		{id: 'constart38', name: 'PREAMBULO - TIT.PRELIMINAR - TIT.1 De los derechos y deberes fundamentales CAP.1-CAP.2.Constitución'},
+		{id: 'constart55', name: 'TIT.1 De los derechos y deberes fundamentales CAP.3-CAP.4-CAP.5.Constitución'},
+		{id: 'constart65', name: 'TIT.2 De la Corona.Constitución'},
 		{id: 'bolsaayto', name: 'EXAMEN BOLSA AYTO HUELVA'},
     ];
     
@@ -521,6 +536,9 @@ function generateCustomTest() {
 			case 'tit6cap52015': allQuestions = allQuestions.concat(tit6cap52015); break;
 			case 'tit7cap52015': allQuestions = allQuestions.concat(tit7cap52015); break;
 			case 'tit8cap52015': allQuestions = allQuestions.concat(tit8cap52015); break;
+			case 'constart38': allQuestions = allQuestions.concat(constart38); break;
+			case 'constart55': allQuestions = allQuestions.concat(constart55); break;
+			case 'constart65': allQuestions = allQuestions.concat(constart65); break;
 			case 'bolsaayto': allQuestions = allQuestions.concat(bolsaayto); break;		
         }
     });
