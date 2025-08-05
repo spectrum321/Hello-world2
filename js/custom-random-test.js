@@ -154,6 +154,22 @@ document.getElementById('shuffle-container').classList.add('hidden');
             testTitle = 'TIT.2 De la Corona.Constitución';
             quiz = [...constart65]; // Crear copia del array
             break;
+		case 'constart107': 
+            testTitle = 'TIT.3 Las Cortes Generales - TIT.4 Gobierno y de la Administración.Constitución';
+            quiz = [...constart107]; // Crear copia del array
+            break;
+		case 'constart127': 
+            testTitle = 'TIT.5 las relaciones entre el Gobierno y las Cortes Generales - TIT.6 Poder Judicial.Constitución';
+            quiz = [...constart127]; // Crear copia del array
+            break;
+		case 'constart136': 
+            testTitle = 'TIT.7 Economía y Hacienda.Constitución';
+            quiz = [...constart136]; // Crear copia del array
+            break;
+		case 'constart158': 
+            testTitle = 'TIT.8 Organización Territorial del Estado - CAP.1 Principios generales - CAP.2 Administración Local.Constitución';
+            quiz = [...constart158]; // Crear copia del array
+            break;
 		case 'bolsaayto': 
             testTitle = 'EXAMEN BOLSA AYTO HUELVA';
             quiz = [...bolsaayto]; // Crear copia del array
@@ -162,7 +178,8 @@ document.getElementById('shuffle-container').classList.add('hidden');
             testTitle = 'TEST ALEATORIO';
             quiz = [...tit1785, ...tit1cap1785, ...titcap11785, ...titcap12785, ...titcap13785, ...tit3cap1785, ...tit3cap2785, ...tit3cap34785, ...tit5cap12785, ...tit5cap34785, ...tit5cap5785,
 			 ...tit6cap12785, ...tit7cap12785, ...tit7cap345785, ...tit8cap785, ...tit9cap785, ...tit10cap12785, ...tit10cap34785, ...tit11cap785, ...tit1252015, ...tit3cap1252015, ...tit3cap452015,
-			 ...tit3cap5652015, ...tit4cap52015, ...tit5cap52015, ...tit6cap52015, ...tit7cap52015, ...tit8cap52015, ...constart38, ...constart55, ...constart65, ...bolsaayto].slice(0, 50);
+			 ...tit3cap5652015, ...tit4cap52015, ...tit5cap52015, ...tit6cap52015, ...tit7cap52015, ...tit8cap52015, ...constart38, ...constart55, ...constart65, ...constart107, 
+			 ...constart127, ...constart136, ...constart158, ...bolsaayto].slice(0, 50);
             break;
         default: 
             quiz = []; 
@@ -381,6 +398,10 @@ function createRandomTestSelector() {
 		{id: 'constart38', name: 'PREAMBULO - TIT.PRELIMINAR - TIT.1 De los derechos y deberes fundamentales CAP.1-CAP.2.Constitución'},
 		{id: 'constart55', name: 'TIT.1 De los derechos y deberes fundamentales CAP.3-CAP.4-CAP.5.Constitución'},
 		{id: 'constart65', name: 'TIT.2 De la Corona.Constitución'},
+		{id: 'constart107', name: 'TIT.3 Las Cortes Generales - TIT.4 Gobierno y de la Administración.Constitución'},
+		{id: 'constart127', name: 'TIT.5 las relaciones entre el Gobierno y las Cortes Generales - TIT.6 Poder Judicial.Constitución'},
+		{id: 'constart136', name: 'TIT.7 Economía y Hacienda.Constitución'},
+		{id: 'constart158', name: 'TIT.8 Organización Territorial del Estado - CAP.1 Principios generales - CAP.2 Administración Local.Constitución'},
 		{id: 'bolsaayto', name: 'EXAMEN BOLSA AYTO HUELVA'},
     ];
     
@@ -539,6 +560,10 @@ function generateCustomTest() {
 			case 'constart38': allQuestions = allQuestions.concat(constart38); break;
 			case 'constart55': allQuestions = allQuestions.concat(constart55); break;
 			case 'constart65': allQuestions = allQuestions.concat(constart65); break;
+			case 'constart107': allQuestions = allQuestions.concat(constart107); break;
+			case 'constart127': allQuestions = allQuestions.concat(constart127); break;
+			case 'constart136': allQuestions = allQuestions.concat(constart136); break;
+			case 'constart158': allQuestions = allQuestions.concat(constart158); break;
 			case 'bolsaayto': allQuestions = allQuestions.concat(bolsaayto); break;		
         }
     });
