@@ -181,6 +181,22 @@ document.getElementById('shuffle-container').classList.add('hidden');
 		case 'art33392015': 
             testTitle = 'TIT.2 la actividad de las Administraciones Públicas - CAP.1 Normas generales de actuación - CAP.2 Términos y plazos.39/2015';
             quiz = [...art33392015]; // Crear copia del array
+            break;	
+		case 'art52392015': 
+            testTitle = 'TIT.3 Actos administrativos - CAP.1 Requisitos de los actos administrativos - CAP.2 Eficacia de los actos - CAP.3 Nulidad y anulabilidad.39/2015';
+            quiz = [...art52392015]; // Crear copia del array
+            break;
+		case 'art69392015': 
+            testTitle = 'TIT.4 Disposiciones sobre el procedimiento administrativo común - CAP.1 Garantías del procedimiento - CAP.2 Iniciación del procedimiento.39/2015';
+            quiz = [...art69392015]; // Crear copia del array
+            break;	
+		case 'art83392015': 
+            testTitle = 'TIT.4 Disposiciones sobre el procedimiento administrativo común - CAP.3 Ordenación del procedimiento - CAP.4 Instrucción del procedimiento.39/2015';
+            quiz = [...art83392015]; // Crear copia del array
+            break;	
+		case 'art126392015': 
+            testTitle = 'TIT.5 Revisión de los actos en vía administrativa - CAP.1 Revisión de oficio - CAP.2 Recursos administrativos.39/2015';
+            quiz = [...art126392015]; // Crear copia del array
             break;			
 		case 'bolsaayto': 
             testTitle = 'EXAMEN BOLSA AYTO HUELVA';
@@ -191,7 +207,7 @@ document.getElementById('shuffle-container').classList.add('hidden');
             quiz = [...tit1785, ...tit1cap1785, ...titcap11785, ...titcap12785, ...titcap13785, ...tit3cap1785, ...tit3cap2785, ...tit3cap34785, ...tit5cap12785, ...tit5cap34785, ...tit5cap5785,
 			 ...tit6cap12785, ...tit7cap12785, ...tit7cap345785, ...tit8cap785, ...tit9cap785, ...tit10cap12785, ...tit10cap34785, ...tit11cap785, ...tit1252015, ...tit3cap1252015, ...tit3cap452015,
 			 ...tit3cap5652015, ...tit4cap52015, ...tit5cap52015, ...tit6cap52015, ...tit7cap52015, ...tit8cap52015, ...constart38, ...constart55, ...constart65, ...constart107, 
-			 ...constart127, ...constart136, ...constart158, ...constart169, ...art12392015, ...art33392015, ...bolsaayto].slice(0, 50);
+			 ...constart127, ...constart136, ...constart158, ...constart169, ...art12392015, ...art33392015, ...art52392015, ...art69392015, ...art83392015, ...art126392015, ...bolsaayto].slice(0, 50);
             break;
         default: 
             quiz = []; 
@@ -416,7 +432,11 @@ function createRandomTestSelector() {
 		{id: 'constart158', name: 'TIT.8 Organización Territorial del Estado - CAP.1 Principios generales - CAP.2 Administración Local.Constitución'},
 		{id: 'constart158', name: 'TIT.9 Tribunal Constitucional - TIT.10 Reforma constitucional - DISPOSICIONES.Constitución'},
 		{id: 'constart158', name: 'TIT.Preliminar - TIT.1 Interesados en el procedimiento.39/2015'},
-		{id: 'art33392015', name: 'TIT.2 la actividad de las Administraciones Públicas - CAP.1 Normas generales de actuación - CAP.2 Términos y plazos .39/2015'},
+		{id: 'art33392015', name: 'TIT.2 la actividad de las Administraciones Públicas - CAP.1 Normas generales de actuación - CAP.2 Términos y plazos.39/2015'},
+		{id: 'art52392015', name: 'TIT.3 Actos administrativos - CAP.1 Requisitos de los actos administrativos - CAP.2 Eficacia de los actos - CAP.3 Nulidad y anulabilidad.39/2015'},
+		{id: 'art69392015', name: 'TIT.4 Disposiciones sobre el procedimiento administrativo común - CAP.1 Garantías del procedimiento - CAP.2 Iniciación del procedimiento.39/2015'},
+		{id: 'art83392015', name: 'TIT.4 Disposiciones sobre el procedimiento administrativo común - CAP.3 Ordenación del procedimiento - CAP.4 Instrucción del procedimiento.39/2015'},
+		{id: 'art126392015', name: 'TIT.5 Revisión de los actos en vía administrativa - CAP.1 Revisión de oficio - CAP.2 Recursos administrativos.39/2015'},
 		{id: 'bolsaayto', name: 'EXAMEN BOLSA AYTO HUELVA'},
     ];
     
@@ -582,6 +602,10 @@ function generateCustomTest() {
 			case 'constart169': allQuestions = allQuestions.concat(constart169); break;
 			case 'art12392015': allQuestions = allQuestions.concat(art12392015); break;
 			case 'art33392015': allQuestions = allQuestions.concat(art33392015); break;
+			case 'art52392015': allQuestions = allQuestions.concat(art52392015); break;
+			case 'art69392015': allQuestions = allQuestions.concat(art69392015); break;
+			case 'art83392015': allQuestions = allQuestions.concat(art83392015); break;
+			case 'art126392015': allQuestions = allQuestions.concat(art126392015); break;
 			case 'bolsaayto': allQuestions = allQuestions.concat(bolsaayto); break;		
         }
     });
