@@ -198,6 +198,22 @@ document.getElementById('shuffle-container').classList.add('hidden');
             testTitle = 'TIT.5 Revisión de los actos en vía administrativa - CAP.1 Revisión de oficio - CAP.2 Recursos administrativos.39/2015';
             quiz = [...art126392015]; // Crear copia del array
             break;			
+		case 'art133392015': 
+            testTitle = 'TIT.6 iniciativa legislativa y de la potestad para dictar reglamentos y otras disposiciones.39/2015';
+            quiz = [...art133392015]; // Crear copia del array
+            break;
+		case 'art243192013': 
+            testTitle = 'TIT.Preliminar - TIT.1 Transparencia de la actividad pública.19/2013';
+            quiz = [...art243192013]; // Crear copia del array
+            break;
+		case 'art32192013': 
+            testTitle = 'TIT.2 Buen gobierno.19/2013';
+            quiz = [...art32192013]; // Crear copia del array
+            break;
+		case 'art40192013': 
+            testTitle = 'TIT.3 Consejo de Transparencia y Buen Gobierno.19/2013';
+            quiz = [...art40192013]; // Crear copia del array
+            break;
 		case 'bolsaayto': 
             testTitle = 'EXAMEN BOLSA AYTO HUELVA';
             quiz = [...bolsaayto]; // Crear copia del array
@@ -207,7 +223,8 @@ document.getElementById('shuffle-container').classList.add('hidden');
             quiz = [...tit1785, ...tit1cap1785, ...titcap11785, ...titcap12785, ...titcap13785, ...tit3cap1785, ...tit3cap2785, ...tit3cap34785, ...tit5cap12785, ...tit5cap34785, ...tit5cap5785,
 			 ...tit6cap12785, ...tit7cap12785, ...tit7cap345785, ...tit8cap785, ...tit9cap785, ...tit10cap12785, ...tit10cap34785, ...tit11cap785, ...tit1252015, ...tit3cap1252015, ...tit3cap452015,
 			 ...tit3cap5652015, ...tit4cap52015, ...tit5cap52015, ...tit6cap52015, ...tit7cap52015, ...tit8cap52015, ...constart38, ...constart55, ...constart65, ...constart107, 
-			 ...constart127, ...constart136, ...constart158, ...constart169, ...art12392015, ...art33392015, ...art52392015, ...art69392015, ...art83392015, ...art126392015, ...bolsaayto].slice(0, 50);
+			 ...constart127, ...constart136, ...constart158, ...constart169, ...art12392015, ...art33392015, ...art52392015, ...art69392015, ...art83392015, ...art126392015,
+			 ...art133392015, ...art243192013, ...art32192013, ...art40192013, ...bolsaayto].slice(0, 50);
             break;
         default: 
             quiz = []; 
@@ -437,6 +454,10 @@ function createRandomTestSelector() {
 		{id: 'art69392015', name: 'TIT.4 Disposiciones sobre el procedimiento administrativo común - CAP.1 Garantías del procedimiento - CAP.2 Iniciación del procedimiento.39/2015'},
 		{id: 'art83392015', name: 'TIT.4 Disposiciones sobre el procedimiento administrativo común - CAP.3 Ordenación del procedimiento - CAP.4 Instrucción del procedimiento.39/2015'},
 		{id: 'art126392015', name: 'TIT.5 Revisión de los actos en vía administrativa - CAP.1 Revisión de oficio - CAP.2 Recursos administrativos.39/2015'},
+		{id: 'art133392015', name: 'TIT.6 iniciativa legislativa y de la potestad para dictar reglamentos y otras disposiciones.39/2015'},
+		{id: 'art243192013', name: 'TIT.Preliminar - TIT.1 Transparencia de la actividad pública.19/2013'},
+		{id: 'art32192013', name: 'TIT.2 Buen gobierno.19/2013'},
+		{id: 'art40192013', name: 'TIT.3 Consejo de Transparencia y Buen Gobierno.19/2013'},
 		{id: 'bolsaayto', name: 'EXAMEN BOLSA AYTO HUELVA'},
     ];
     
@@ -606,6 +627,10 @@ function generateCustomTest() {
 			case 'art69392015': allQuestions = allQuestions.concat(art69392015); break;
 			case 'art83392015': allQuestions = allQuestions.concat(art83392015); break;
 			case 'art126392015': allQuestions = allQuestions.concat(art126392015); break;
+			case 'art133392015': allQuestions = allQuestions.concat(art133392015); break;
+			case 'art243192013': allQuestions = allQuestions.concat(art243192013); break;
+			case 'art32192013': allQuestions = allQuestions.concat(art32192013); break;
+			case 'art40192013': allQuestions = allQuestions.concat(art40192013); break;
 			case 'bolsaayto': allQuestions = allQuestions.concat(bolsaayto); break;		
         }
     });
